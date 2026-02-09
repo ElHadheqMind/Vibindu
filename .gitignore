@@ -20,3 +20,8 @@ env/
 .idea/
 *.log
 tmp/
+
+# Project specific
+data/
+planb-request/
+*.sfc
