@@ -1,0 +1,30 @@
+registrant_contact:
+  email: mezzihoussem1@gmail.com
+  phone_number: "+21626706183"
+  postal_address:
+    region_code: TN
+    postal_code: "7000"
+    address_lines: ["borj taleb"]
+    locality: Bizerte
+    organization: El Hadheq Mind
+    recipients: ["Houssem Mezzi"]
+admin_contact:
+  email: mezzihoussem1@gmail.com
+  phone_number: "+21626706183"
+  postal_address:
+    region_code: TN
+    postal_code: "7000"
+    address_lines: ["borj taleb"]
+    locality: Bizerte
+    organization: El Hadheq Mind
+    recipients: ["Houssem Mezzi"]
+technical_contact:
+  email: mezzihoussem1@gmail.com
+  phone_number: "+21626706183"
+  postal_address:
+    region_code: TN
+    postal_code: "7000"
+    address_lines: ["borj taleb"]
+    locality: Bizerte
+    organization: El Hadheq Mind
+    recipients: ["Houssem Mezzi"]

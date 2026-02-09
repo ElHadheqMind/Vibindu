@@ -1,0 +1,22 @@
+# Node
+node_modules/
+dist/
+build/
+coverage/
+.npm/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# General
+.DS_Store
+.vscode/
+.idea/
+*.log
+tmp/

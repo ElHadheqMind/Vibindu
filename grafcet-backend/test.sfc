@@ -1,0 +1,9 @@
+{
+    "elements": [
+        { "id": "0", "type": "step", "stepType": "initial", "name": "0", "initial": true, "x": 0, "y": 0 },
+        { "id": "t1", "type": "transition", "condition": "t1", "x": 0, "y": 100 },
+        { "id": "1", "type": "step", "stepType": "normal", "name": "1", "x": 0, "y": 200 },
+        { "id": "c1", "type": "connection", "sourceId": "0", "targetId": "t1" },
+        { "id": "c2", "type": "connection", "sourceId": "t1", "targetId": "1" }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "sequence": [
+        {
+            "type": "step",
+            "name": "Initial",
+            "stepType": "initial"
+        },
+        {
+            "type": "transition",
+            "condition": "T0"
+        },
+        {
+            "type": "step",
+            "name": "Running",
+            "stepType": "normal"
+        },
+        {
+            "type": "divergence",
+            "divergenceType": "AND",
+            "branches": [
+                [
+                    {
+                        "type": "step",
+                        "name": "Task A",
+                        "stepType": "task"
+                    }
+                ],
+                [
+                    {
+                        "type": "step",
+                        "name": "Task B",
+                        "stepType": "task"
+                    }
+                ]
+            ]
+        },
+        {
+            "type": "step",
+            "name": "Finished",
+            "stepType": "normal"
+        },
+        {
+            "type": "transition",
+            "condition": "T1"
+        },
+        {
+            "type": "jump",
+            "target": "1"
+        }
+    ]
+}

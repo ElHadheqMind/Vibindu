@@ -1,0 +1,40 @@
+services:
+  backend:
+    build: ./grafcet-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+      - STORAGE_DRIVER=local
+      - STORAGE_PATH=/app/data
+      - DATABASE_URL=file:/app/data/dev.db
+      - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+      - GOOGLE_CLIENT_ID=217584639313-2qj39nfi4k0phh0nu81lhbgvsp5kdn5b.apps.googleusercontent.com
+      # Set CORS origin for frontend container and local dev
+      - CORS_ORIGIN=http://localhost:3000,http://localhost:5173
+    volumes:
+      - ./data:/app/data
+      # Hot reload for dev (optional, if you want to modify code)
+      # - ./grafcet-backend/src:/app/src
+
+  agents:
+    build: ./grafcet-agents
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    # Mount agents code for hot reload (optional)
+    # volumes:
+    #   - ./grafcet-agents/agents:/app/agents
+
+  frontend:
+    build: ./grafcet-editor
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+      - agents
+    # For runtime environment variables in Nginx/SPA, specialized handling is needed
+    # But for now we assume build-time or defaults.

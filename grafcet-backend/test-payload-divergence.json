@@ -1,0 +1,3 @@
+{
+    "code": "INITIAL STEP 1\ndivergence AND 3\n  branch\n    STEP 10\n    TRANSITION T10\n    STEP 13\n  branch\n    STEP 9\n    TRANSITION T9\n    STEP 12\n    TRANSITION T16\n    STEP 16\n  branch\n    STEP 8\n    TRANSITION T8\n    STEP 15\nend divergence\nSTEP 17"
+}

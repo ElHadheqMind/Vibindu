@@ -1,0 +1,3 @@
+{
+    "code": "SFC Test\nStep 1 (Initial) S1\nAction L1\nDivergence AND\nBranch\nStep 2 S2\nEndBranch\nBranch\nStep 3 S3\nEndBranch\nEndDivergence\nStep 4 S4\nTransition T1\nJump 1"
+}

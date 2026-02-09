@@ -1,0 +1,37 @@
+{
+    "sequence": [
+        {
+            "type": "step",
+            "name": "Start",
+            "stepType": "initial"
+        },
+        {
+            "type": "divergence",
+            "divergenceType": "OR",
+            "branches": [
+                [
+                    {
+                        "type": "step",
+                        "name": "Branch1Step",
+                        "stepType": "normal"
+                    },
+                    {
+                        "type": "transition",
+                        "condition": "T1"
+                    }
+                ],
+                [
+                    {
+                        "type": "transition",
+                        "condition": "T2"
+                    },
+                    {
+                        "type": "step",
+                        "name": "Branch2Step",
+                        "stepType": "normal"
+                    }
+                ]
+            ]
+        }
+    ]
+}

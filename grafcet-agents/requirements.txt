@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+google-generativeai
+google-genai
+pydantic
+python-dotenv
+websockets
+aiohttp
+aiofiles
+pypdf
+
